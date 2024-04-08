@@ -91,21 +91,11 @@
         }
       },
       {
-        "Field": "{og.determiner}",
-        "Description": "The word that describes the nature of the object, such as 'a', 'an', or 'the'.",
-        "Example": {
-          "Input": {
-            "og.determiner": "a"
-          },
-          "Output": "<meta property=\"og:determiner\" content=\"a\" />"
-        }
-      },
-      {
         "Field": "{og.locale.alternate}",
         "Description": "Additional locales for the content.",
         "Example": {
           "Input": {
-            "og.locale.alternate": "fr_FR"
+            "og.locale.alternate": "en_GB"
           },
           "Output": "<meta property=\"og:locale:alternate\" content=\"fr_FR\" />"
         }
