@@ -1,0 +1,115 @@
+{
+    "OG_Tags_Fields": [
+      {
+        "Field": "{og.title}",
+        "Description": "The title of the content being shared.",
+        "Example": {
+          "Input": {
+            "og.title": "Welcome to PetCircle"
+          },
+          "Output": "<meta property=\"og:title\" content=\"Welcome to PetCircle\" />"
+        }
+      },
+      {
+        "Field": "{og.type}",
+        "Description": "The type of content, such as website, article, product, etc.",
+        "Example": {
+          "Input": {
+            "og.type": "website"
+          },
+          "Output": "<meta property=\"og:type\" content=\"website\" />"
+        }
+      },
+      {
+        "Field": "{og.image}",
+        "Description": "The URL of an image representing the content.",
+        "Example": {
+          "Input": {
+            "og.image": "https://petcircle.com.au/image1.jpg"
+          },
+          "Output": "<meta property=\"og:image\" content=\"https://petcircle.com.au/image1.jpg\" />"
+        }
+      },
+      {
+        "Field": "{og.url}",
+        "Description": "The canonical URL of the content.",
+        "Example": {
+          "Input": {
+            "og.url": "https://petcircle.com.au"
+          },
+          "Output": "<meta property=\"og:url\" content=\"https://petcircle.com.au\" />"
+        }
+      },
+      {
+        "Field": "{og.description}",
+        "Description": "A brief description of the content.",
+        "Example": {
+          "Input": {
+            "og.description": "Discover a range of pet products at PetCircle."
+          },
+          "Output": "<meta property=\"og:description\" content=\"Discover a range of pet products at PetCircle.\" />"
+        }
+      },
+      {
+        "Field": "{og.site_name}",
+        "Description": "The name of the website or app.",
+        "Example": {
+          "Input": {
+            "og.site_name": "PetCircle"
+          },
+          "Output": "<meta property=\"og:site_name\" content=\"PetCircle\" />"
+        }
+      },
+      {
+        "Field": "{og.locale}",
+        "Description": "The locale (language and optionally a region) of the content.",
+        "Example": {
+          "Input": {
+            "og.locale": "en_GB"
+          },
+          "Output": "<meta property=\"og:locale\" content=\"en_GB\" />"
+        }
+      },
+      {
+        "Field": "{og.audio}",
+        "Description": "The URL of an audio file related to the content.",
+        "Example": {
+          "Input": {
+            "og.audio": "https://petcircle.com.au/audio1.mp3"
+          },
+          "Output": "<meta property=\"og:audio\" content=\"https://petcircle.com.au/audio1.mp3\" />"
+        }
+      },
+      {
+        "Field": "{og.video}",
+        "Description": "The URL of a video file related to the content.",
+        "Example": {
+          "Input": {
+            "og.video": "https://petcircle.com.au/video1.mp4"
+          },
+          "Output": "<meta property=\"og:video\" content=\"https://petcircle.com.au/video1.mp4\" />"
+        }
+      },
+      {
+        "Field": "{og.determiner}",
+        "Description": "The word that describes the nature of the object, such as 'a', 'an', or 'the'.",
+        "Example": {
+          "Input": {
+            "og.determiner": "a"
+          },
+          "Output": "<meta property=\"og:determiner\" content=\"a\" />"
+        }
+      },
+      {
+        "Field": "{og.locale.alternate}",
+        "Description": "Additional locales for the content.",
+        "Example": {
+          "Input": {
+            "og.locale.alternate": "fr_FR"
+          },
+          "Output": "<meta property=\"og:locale:alternate\" content=\"fr_FR\" />"
+        }
+      }
+    ]
+  }
+  

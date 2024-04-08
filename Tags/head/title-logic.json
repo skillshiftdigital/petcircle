@@ -1,0 +1,70 @@
+{
+  "SEO_Title_Generation": [
+    {
+      "Product_Type": "Single",
+      "Logic": "Use the product's SEO title directly.",
+      "SEO_Title_Formula": "{seo.title}",
+      "Example": {
+        "Input": {
+          "seo.title": "Deluxe Dog Bed"
+        },
+        "Output": "Deluxe Dog Bed"
+      }
+    },
+    {
+      "Product_Type": "Variant",
+      "Logic": "Use the variant product's SEO title directly.",
+      "SEO_Title_Formula": "{seo.title}",
+      "Example": {
+        "Input": {
+          "seo.title": "Deluxe Dog Bed - Small"
+        },
+        "Output": "Deluxe Dog Bed - Small"
+      }
+    },
+    {
+      "Product_Type": "Grouped_Bundle",
+      "Logic": "Concatenate 'Buy' with the names of the included products.",
+      "SEO_Title_Formula": "'Buy ' + {product.name} + ' and ' + {product.name}",
+      "Example": {
+        "Input": {
+          "product.name": ["Deluxe Dog Bed", "Dog Pillow"]
+        },
+        "Output": "Buy Deluxe Dog Bed and Dog Pillow"
+      }
+    },
+    {
+      "Product_Type": "Pre_order",
+      "Logic": "Prefix the product name with 'Pre-order'.",
+      "SEO_Title_Formula": "'Pre-order ' + {product.name}",
+      "Example": {
+        "Input": {
+          "product.name": "Advanced Dog Collar"
+        },
+        "Output": "Pre-order Advanced Dog Collar"
+      }
+    },
+    {
+      "Product_Type": "Out_of_Stock",
+      "Logic": "Inherit the base SEO title without modification.",
+      "SEO_Title_Formula": "{seo.title}",
+      "Example": {
+        "Input": {
+          "seo.title": "Deluxe Dog Bed"
+        },
+        "Output": "Deluxe Dog Bed"
+      }
+    },
+    {
+      "Product_Type": "Subscription_only",
+      "Logic": "Prefix the SEO title with 'Subscribe to'.",
+      "SEO_Title_Formula": "'Subscribe to ' + {seo.title}",
+      "Example": {
+        "Input": {
+          "seo.title": "Monthly Dog Treats Box"
+        },
+        "Output": "Subscribe to Monthly Dog Treats Box"
+      }
+    }
+  ]
+}

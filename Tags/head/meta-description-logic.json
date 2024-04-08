@@ -1,0 +1,80 @@
+// Note to developers: 
+//The backslashes within the JSON strings are used 
+//to escape characters in this JSON format. 
+//These should not be included in the actual code implementation.
+
+{
+    "META_Description_Generation": [
+      {
+        "Product_Type": "Single",
+        "Logic": "Use the product's SEO meta description directly.",
+        "META_Description_Formula": "{seo.meta.description}",
+        "Example": {
+          "Input": {
+            "seo.meta.description": "Premium dog food for optimal nutrition."
+          },
+          "Output": "Premium dog food for optimal nutrition."
+        }
+      },
+      {
+        "Product_Type": "Variant",
+        "Logic": "Use the variant product's SEO meta description directly.",
+        "META_Description_Formula": "{seo.meta.description}",
+        "Example": {
+          "Input": {
+            "seo.meta.description": "Small bag of premium dog food."
+          },
+          "Output": "Small bag of premium dog food."
+        }
+      },
+      {
+        "Product_Type": "Grouped_Bundle",
+        "Logic": "Concatenate product names and additional description parts.",
+        "META_Description_Formula": "{seo.description.pre} + {product.name} + {seo.description.post}",
+        "Example": {
+          "Input": {
+            "seo.description.pre": "High-quality bundle: ",
+            "product.name": ["Premium Dog Food", "Dog Treats"],
+            "seo.description.post": " for your furry friend."
+          },
+          "Output": "High-quality bundle: Premium Dog Food and Dog Treats for your furry friend."
+        }
+      },
+      {
+        "Product_Type": "Pre_order",
+        "Logic": "Prefix 'Pre-order' to the product name.",
+        "META_Description_Formula": "'Pre-order ' + {product.name} + {seo.description.post}",
+        "Example": {
+          "Input": {
+            "product.name": "Advanced Dog Collar",
+            "seo.description.post": " available soon."
+          },
+          "Output": "Pre-order Advanced Dog Collar available soon."
+        }
+      },
+      {
+        "Product_Type": "Out_of_Stock",
+        "Logic": "Inherit the base SEO meta description without modification.",
+        "META_Description_Formula": "{seo.meta.description}",
+        "Example": {
+          "Input": {
+            "seo.meta.description": "Premium dog food for optimal nutrition."
+          },
+          "Output": "Premium dog food for optimal nutrition."
+        }
+      },
+      {
+        "Product_Type": "Subscription_only",
+        "Logic": "Prefix 'Subscribe to' to the product name.",
+        "META_Description_Formula": "'Subscribe to ' + {product.name} + {seo.description.post}",
+        "Example": {
+          "Input": {
+            "product.name": "Monthly Dog Treats Box",
+            "seo.description.post": " for regular delivery."
+          },
+          "Output": "Subscribe to Monthly Dog Treats Box for regular delivery."
+        }
+      }
+    ]
+  }
+  

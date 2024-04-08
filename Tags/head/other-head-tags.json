@@ -1,0 +1,48 @@
+// Note to developers: 
+//The backslashes within the JSON strings are used 
+//to escape characters in this JSON format. 
+//These should not be included in the actual code implementation.
+
+{
+    "Canonical_Tags": [
+      {
+        "Logic": "Combine the hostname and URI without parameters for the canonical URL.",
+        "Canonical_Tag_Formula": "{hostname} + {URI_without_parameters}",
+        "Example": {
+          "Input": {
+            "hostname": "https://petcircle.com.au",
+            "URI_without_parameters": "/products/dog-food"
+          },
+          "Output": "https://petcircle.com.au/products/dog-food"
+        }
+      }
+    ],
+    "HREFLANG": [
+      {
+        "Logic": "Generate HREFLANG tags for multiple language and region versions of the page.",
+        "HREFLANG_Tag_Formula": "<link rel=\"alternate\" href=\"{URL}\" hreflang=\"{language}-{region}\" />",
+        "Example": {
+          "Input": {
+            "URL": "https://petcircle.com.au/products/dog-food",
+            "language": "en",
+            "region": "AU"
+          },
+          "Output": "<link rel=\"alternate\" href=\"https://petcircle.com.au/products/dog-food\" hreflang=\"en-AU\" />"
+        }
+      }
+    ],
+    "Meta_Index_Follow": [
+      {
+        "Logic": "Generate meta tags for search engine indexing and following.",
+        "Meta_Index_Follow_Tag_Formula": "<meta name=\"robots\" content=\"{index},{follow}\" />",
+        "Example": {
+          "Input": {
+            "index": "index",
+            "follow": "follow"
+          },
+          "Output": "<meta name=\"robots\" content=\"index,follow\" />"
+        }
+      }
+    ]
+  }
+  
