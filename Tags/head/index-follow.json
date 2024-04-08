@@ -1,0 +1,126 @@
+{
+    "Meta_Index_Follow": [
+      {
+        "Input_Options": [
+          {"index": "index", "follow": "follow"},
+          {"index": "index", "follow": "nofollow"},
+          {"index": "noindex", "follow": "follow"},
+          {"index": "noindex", "follow": "nofollow"}
+        ],
+        "Selected_State": {"index": "index", "follow": "follow"},
+        "Logic": "Generate meta tags for search engine indexing and following.",
+        "Meta_Index_Follow_Tag_Formula": "<meta name=\"robots\" content=\"{index},{follow}\" />",
+        "Example": {
+          "Input": {
+            "index": "index",
+            "follow": "follow"
+          },
+          "Output": "<meta name=\"robots\" content=\"index,follow\" />"
+        },
+        "Notes": "Ensure 'index' or 'noindex', and 'follow' or 'nofollow' are used. This field is Boolean."
+      }
+    ]
+  }
+  
+// The following is an expansion of META Robots dictionary to be added to the requirements
+
+{
+    "Robots_Meta_Tags": [
+      {
+        "Tag": "index",
+        "Description": "Allows search engines to index the page. Default behavior if neither index nor noindex is specified.",
+        "Example": {
+          "Input": "index",
+          "Output": "<meta name=\"robots\" content=\"index\" />"
+        }
+      },
+      {
+        "Tag": "noindex",
+        "Description": "Instructs search engines not to index the page. Useful for pages you don't want to appear in search engine results.",
+        "Example": {
+          "Input": "noindex",
+          "Output": "<meta name=\"robots\" content=\"noindex\" />"
+        }
+      },
+      {
+        "Tag": "follow",
+        "Description": "Allows search engines to follow links on the page and pass link equity (PageRank) to linked pages.",
+        "Example": {
+          "Input": "follow",
+          "Output": "<meta name=\"robots\" content=\"follow\" />"
+        }
+      },
+      {
+        "Tag": "nofollow",
+        "Description": "Instructs search engines not to follow links on the page. Often used for user-generated content to prevent the flow of PageRank to potentially low-quality external sites.",
+        "Example": {
+          "Input": "nofollow",
+          "Output": "<meta name=\"robots\" content=\"nofollow\" />"
+        }
+      },
+      {
+        "Tag": "noarchive",
+        "Description": "Tells search engines not to store a cached copy of the page. Useful for pages with sensitive or constantly changing content.",
+        "Example": {
+          "Input": "noarchive",
+          "Output": "<meta name=\"robots\" content=\"noarchive\" />"
+        }
+      },
+      {
+        "Tag": "nosnippet",
+        "Description": "Prevents search engines from displaying a snippet of the page in search results. Useful for pages with sensitive or proprietary content.",
+        "Example": {
+          "Input": "nosnippet",
+          "Output": "<meta name=\"robots\" content=\"nosnippet\" />"
+        }
+      },
+      {
+        "Tag": "noodp",
+        "Description": "Tells search engines not to use the Open Directory Project (ODP) description for the page's snippet in search results.",
+        "Example": {
+          "Input": "noodp",
+          "Output": "<meta name=\"robots\" content=\"noodp\" />"
+        }
+      },
+      {
+        "Tag": "noydir",
+        "Description": "Instructs search engines not to use the Yahoo! Directory description for the page's snippet in search results.",
+        "Example": {
+          "Input": "noydir",
+          "Output": "<meta name=\"robots\" content=\"noydir\" />"
+        }
+      },
+      {
+        "Tag": "noimageindex",
+        "Description": "Prevents search engines from indexing images on the page. Useful for pages where image indexing is not desired.",
+        "Example": {
+          "Input": "noimageindex",
+          "Output": "<meta name=\"robots\" content=\"noimageindex\" />"
+        }
+      },
+      {
+        "Tag": "max-snippet:-1",
+        "Description": "Controls the maximum length of snippets in search results.",
+        "Example": {
+          "Input": "max-snippet:-1",
+          "Output": "<meta name=\"robots\" content=\"max-snippet:-1\" />"
+        }
+      },
+      {
+        "Tag": "max-image-preview:large",
+        "Description": "Controls the maximum size of image previews in search results.",
+        "Example": {
+          "Input": "max-image-preview:large",
+          "Output": "<meta name=\"robots\" content=\"max-image-preview:large\" />"
+        }
+      },
+      {
+        "Tag": "max-video-preview:-1",
+        "Description": "Controls the maximum size of video previews in search results.",
+        "Example": {
+          "Input": "max-video-preview:-1",
+          "Output": "<meta name=\"robots\" content=\"max-video-preview:-1\" />"
+        }
+      }
+    ]
+  }
