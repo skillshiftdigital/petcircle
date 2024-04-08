@@ -1,0 +1,45 @@
+{
+    "@context": "http://schema.org", // Specifies the context for the JSON-LD data
+    "@type": "CollectionPage", // Indicates that this JSON represents a collection page
+    "name": "{category.name}", // The name of the category (to be replaced with actual category name)
+    "description": "{category.description}", // The description of the category (to be replaced with actual category description)
+    "url": "{category.url}", // The URL of the category page (to be replaced with actual category URL)
+    "image": "{category.image}", // The image associated with the category (to be replaced with actual category image URL)
+    "breadcrumb": { // Breadcrumb navigation for the category page
+        "@type": "BreadcrumbList", // Indicates that this is a breadcrumb list
+        "itemListElement": [ // List of breadcrumb items
+            {
+                "@type": "ListItem", // Indicates that this is a breadcrumb item
+                "position": 1, // The position of the breadcrumb item in the list
+                "item": { // The item itself
+                    "@id": "{homepage.url}", // The URL of the homepage (to be replaced with actual homepage URL)
+                    "name": "Home" // The name of the homepage
+                }
+            },
+            {
+                "@type": "ListItem", // Indicates that this is a breadcrumb item
+                "position": 2, // The position of the breadcrumb item in the list
+                "item": { // The item itself
+                    "@id": "{category.url}", // The URL of the category page (to be replaced with actual category URL)
+                    "name": "{category.name}" // The name of the category (to be replaced with actual category name)
+                }
+            }
+        ]
+    },
+    "mainEntity": { // The main content of the category page
+        "@type": "ItemList", // Indicates that this is a list of items
+        "itemListElement": [ // List of items in the category
+            {
+                "@type": "ListItem", // Indicates that this is an item in the list
+                "position": 1, // The position of the item in the list
+                "url": "{article1.url}" // The URL of the first article in the category (to be replaced with actual article URL)
+            },
+            {
+                "@type": "ListItem", // Indicates that this is an item in the list
+                "position": 2, // The position of the item in the list
+                "url": "{article2.url}" // The URL of the second article in the category (to be replaced with actual article URL)
+            }
+            // Add more ListItem objects for each article in the category
+        ]
+    }
+}

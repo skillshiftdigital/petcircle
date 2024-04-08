@@ -1,0 +1,21 @@
+{
+    "@context": "http://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+        {
+            "@type": "Product",
+            "name": "{product1.name}",
+            "image": "{product1.image}",
+            "description": "{product1.description}",
+            // ... rest of Product properties for product1 ...
+        },
+        {
+            "@type": "Product",
+            "name": "{product2.name}",
+            "image": "{product2.image}",
+            "description": "{product2.description}",
+            // ... rest of Product properties for product2 ...
+        }
+        // Add more Product objects for each product in the carousel
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "ItemList", // Denotes a list of items, suitable for a PLP.
+    "name": "{plpName}", // Example: "Featured Pet Products"
+    "description": "{plpDescription}", // Example: "Discover top-rated products for your pet."
+    "url": "{plpUrl}", // Example: "https://www.example.com/featured-products"
+    "numberOfItems": "{numberOfItems}", // Example: "50" - Total number of items on the PLP.
+    "itemListOrder": "http://schema.org/ItemListOrderAscending", // Indicates the sorting order of the list, e.g., by name or price.
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1, // Position of the item in the list.
+        "item": {
+          "@type": "Product",
+          "name": "{product1Name}", // "Deluxe Dog Bed"
+          "url": "{product1Url}" // "https://www.example.com/products/deluxe-dog-bed"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "{product2Name}", // "Organic Catnip"
+          "url": "{product2Url}" // "https://www.example.com/products/organic-catnip"
+        }
+      }
+      // Additional ListItem objects for each product listed on the PLP.
+    ]
+  }
+  

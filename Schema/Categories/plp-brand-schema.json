@@ -1,0 +1,36 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "ItemList", // Denotes this is a list of items.
+    "name": "{plpBrandName}", // "blackhawk Pet Supplies"
+    "description": "{plpBrandDescription}", // "Top-quality products by blackhawk for your pets."
+    "url": "{plpBrandUrl}", // "https://www.petcircle.com.au/brands/blackhawk"
+    "numberOfItems": "{numberOfItems}", // "100" - The total number of blackhawk brand products listed.
+    "itemListOrder": "http://schema.org/ItemListOrderAscending", // The order items are listed in, e.g., ascending or descending.
+    "brand": {
+      "@type": "Brand",
+      "name": "{brand.name}", // "blackhawk"
+      "logo": "{brand.logoUrl}" // "https://www.petcircle.com.au/logos/blackhawk.png"
+    },
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "{product1Name}", // "Royal Canin Deluxe Dog Bed"
+          "url": "{product1Url}" // "https://www.petcircle.com.au/products/blackhawk-deluxe-dog-bed"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "{product2Name}", // "Lazy Cat Organic Catnip"
+          "url": "{product2Url}" // "https://www.petcircle.com.au/products/blackhawk-organic-catnip"
+        }
+      }
+      // Additional ListItem objects for other products.
+    ]
+  }
+  

@@ -1,0 +1,39 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "{h1}",
+    "alternativeHeadline": "{seo.title}",
+    "image": "{article.image}",
+    "author": {
+        "@type": "Person",
+        "name": "{author.name}"
+    },
+    "editor": {
+        "@type": "Person",
+        "name": "{editor.name}"
+    },
+    "genre": "{article.genre}",
+    "publisher": {
+        "@type": "Organization",
+        "name": "{publisher.name}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{publisher.logoUrl}"
+        }
+    },
+    "url": "{article.url}",
+    "datePublished": "2023-01-01",
+    "dateModified": "{article.dateModified}",
+    "description": "{article.description}",
+    "articleBody": "{article.body}",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{webpage.id}"
+    },
+    "isAccessibleForFree": "{article.isAccessibleForFree}",
+    "hasPart": {
+        "@type": "WebPageElement",
+        "isAccessibleForFree": "False",
+        "cssSelector" : "{paywall.cssSelector}"
+    }
+}

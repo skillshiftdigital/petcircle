@@ -1,0 +1,25 @@
+// See product-single-schema or product-variant-schema
+    "offers": {
+      "@type": "Offer",
+      "url": "{ProductUrl}",
+
+      // Change availability based on the product status, each offer should have only 1 availability
+      "availability": "http://schema.org/InStock",
+      "availability": "http://schema.org/OutOfStock",
+      "availability": "http://schema.org/PreOrder",
+      "availability": "http://schema.org/SoldOut",
+      "availability": "http://schema.org/Discontinued",
+      "availability": "http://schema.org/OnlineOnly",
+      "availability": "http://schema.org/LimitedAvailability"
+
+
+      "price": "{Price}",
+      "priceCurrency": "{currency}",
+      "validFrom": "{StartDate}",
+      "validThrough": "{EndDate}",
+      "seller": {
+        "@type": "Organization",
+        "name": "{sellerName}",
+        "url": "{sellerUrl}"
+      }
+    },

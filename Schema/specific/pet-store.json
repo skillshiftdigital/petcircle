@@ -1,0 +1,40 @@
+{
+    "@context": "http://schema.org",
+    "@type": "PetStore",
+    "name": "{store.name}",
+    "description": "{store.description}",
+    "image": "{store.image}",
+    "url": "{store.url}",
+    "telephone": "{store.telephone}",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{store.address.streetAddress}",
+        "addressLocality": "{store.address.addressLocality}",
+        "addressRegion": "{store.address.addressRegion}",
+        "postalCode": "{store.address.postalCode}",
+        "addressCountry": "{store.address.addressCountry}"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "{store.geo.latitude}",
+        "longitude": "{store.geo.longitude}"
+    },
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                // ... rest of the days ...
+            ],
+            "opens": "{store.openingHours.opens}",
+            "closes": "{store.openingHours.closes}"
+        }
+        // Add more OpeningHoursSpecification objects for different opening hours
+    ],
+    "sameAs": [
+        "{store.facebookPage}",
+        "{store.twitterHandle}",
+        // ... other social media profiles ...
+    ]
+}

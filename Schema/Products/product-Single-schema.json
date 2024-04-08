@@ -1,0 +1,101 @@
+{
+  "@context": "http://schema.org/", // Context for the schema
+  "@type": "Product", // Type of data
+  "brand": {
+    "@type": "Brand",
+    "name": "{brand.name}", // e.g., "NexGard"
+    "logo": "{brand.logoUrl}" // e.g., "https://example.com/path/to/nexgard-logo.png"
+  },
+  "name": "{product.name} - {product.variant}", // e.g., "NexGard Spectra for Medium Dogs - 6 Pack"
+  "image": [
+    "{product.image1}", // e.g., "https://example.com/path/to/product/main-image.jpg"
+    "{product.image2}", // e.g., "https://example.com/path/to/product/image2.jpg"
+    "{product.image3}" // e.g., "https://example.com/path/to/product/image3.jpg"
+  ],
+  "description": "{product.description}", // e.g., "Monthly chewable for dogs to prevent fleas, ticks, and worms."
+  "sku": "{product.sku}", // e.g., "NGSPECTRA-MD-6PK"
+  "mpn": "{product.mpn}", // e.g., "2345NGMD6"
+  "model": "{product.model}", // e.g., "Spectra Medium 6 Pack"
+  "color": "{product.color}", // e.g., "Green"
+  "material": "{product.material}", // e.g., "Beef-flavored chewable"
+  "productID": "{product.ID}", // e.g., "NGSPECTRA-MD-6"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{product.ratingValue}", // e.g., "4.8"
+    "reviewCount": "{product.reviewCount}" // e.g., "278"
+  },
+  "review": [
+    //Start product reviews
+    {
+      "@type": "Review",
+      "author": "{review.author1}", // e.g., "Jane Doe"
+      "datePublished": "{review.date1}", // e.g., "2024-03-25"
+      "description": "{review.description1}", // e.g., "Great efficacy and my dog loves it!"
+      "name": "{review.title1}", // e.g., "Effective and Tasty"
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "ratingValue": "{review.rating1}", // e.g., "5"
+        "worstRating": "1"
+      }
+    },
+    // Add additional reviews, last review does not include a "comma" at the end.
+    // End product reviews
+  ],
+  "offers": {
+    "@type": "Offer",
+    "url": "{product.url}", // e.g., "https://example.com/path/to/nexgard-spectra"
+    "availability": "{product.availability}", // e.g., "http://schema.org/InStock"
+    "price": "{product.price}", // e.g., "152.10"
+    "priceCurrency": "{product.priceCurrency}", // e.g., "AUD"
+    "itemCondition": "{product.itemCondition}", // e.g., "http://schema.org/NewCondition"
+    "priceValidUntil": "{product.priceValidUntil}", // e.g., "2025-12-31"
+    "seller": {
+      "@type": "Organization",
+      "name": "{seller.name}", // e.g., "Pet Circle"
+      "url": "{seller.url}" // e.g., "https://petcircle.com"
+    },
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "{shipping.rate}", // e.g., "0" for free shipping
+        "currency": "{shipping.currency}" // e.g., "AUD"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "cutoffTime": "{shipping.cutoffTime}" // e.g., "15:00 AEST"
+      }
+    }
+  },
+  "weight": "{product.weight}", // e.g., "0.1kg"
+  "height": "{product.height}", // e.g., "10cm"
+  "width": "{product.width}", // e.g., "5cm"
+  "depth": "{product.depth}", // e.g., "1cm"
+  "category": "{product.category}", // e.g., "Pet Supplies > Dog Supplies > Flea and Tick Control"
+  "gtin": "{product.gtin}", // e.g., "1234567890123"
+  "additionalProperty": [
+    //Start additional properties
+    {
+      "@type": "PropertyValue",
+      "name": "Ingredients",
+      "value": "Chicken, Beef flavor, Rice" // Detailed ingredients list
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Nutritional Information",
+      "value": "Protein 26%, Fat 16%" // Nutritional breakdown
+    }
+    // Add additional properties, last property does not include a "comma" at the end.
+    //End additonal properties
+  ],
+  "releaseDate": "{product.releaseDate}", // e.g., "2023-01-01"
+  "productionDate": "{product.productionDate}", // e.g., "2022-12-01"
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "{product.audience}" // e.g., "Pet Owners"
+  },
+  "award": "{product.award}", // e.g., "Best Flea Treatment 2024"
+  "hasMeasurement": "{product.hasMeasurement}", // e.g., "Yes" if applicable
+  "isAccessoryOrSparePartFor": "{product.isAccessoryOrSparePartFor}" // e.g., "N/A" for standalone products
+}

@@ -1,0 +1,105 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "brand": {
+    "@type": "Brand",
+    "name": "{brand.name}", // "NutriMax"
+    "logo": "{brand.logoUrl}" // "https://example.com/logos/nutrimax.png"
+  },
+  "name": "{product.name}", // "NutriMax Dog Food"
+  "image": [
+    "{product.variant1.image}", // "https://example.com/images/nutrimax-chicken-small.jpg"
+    "{product.variant2.image}", // "https://example.com/images/nutrimax-chicken-medium.jpg"
+    "{product.variant3.image}" // "https://example.com/images/nutrimax-chicken-large.jpg"
+  ],
+  "description": "{product.description}", // "High-quality chicken-flavored dog food available in various sizes."
+  "sku": "{product.variantSku}", // Dynamic based on variant, e.g., "NM-CHICK-001"
+  "mpn": "{product.variantMpn}", // Dynamic based on variant, e.g., "NMCHICK001"
+  "model": "{product.model}", // "Chicken Flavor"
+  "color": "{product.color}", // "Brown"
+  "material": "{product.material}", // "Chicken Meal, Brown Rice, Oats"
+  "productID": "{product.ID}", // "NM-CHICK"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{product.ratingValue}", // "4.7"
+    "reviewCount": "{product.reviewCount}" // "350"
+  },
+  "review": [
+    //Start product reviews
+    {
+      "@type": "Review",
+      "author": "{review.author1}", // e.g., "Jane Doe"
+      "datePublished": "{review.date1}", // e.g., "2024-03-25"
+      "description": "{review.description1}", // e.g., "Great efficacy and my dog loves it!"
+      "name": "{review.title1}", // e.g., "Effective and Tasty"
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "ratingValue": "{review.rating1}", // e.g., "5"
+        "worstRating": "1"
+      }
+    },
+    // Add additional reviews, last review does not include a "comma" at the end.
+    // End product reviews
+  ],
+  "offers": [
+
+    //Start product price variants
+
+    {
+      "@type": "Offer",
+      "url": "{product.variant1.url}", // "https://example.com/nutrimax-small"
+      "availability": "{product.variant1.availability}", // "http://schema.org/InStock"
+      "price": "{product.variant1.price}", // "25.99"
+      "priceCurrency": "{product.priceCurrency}", // "USD"
+      "itemCondition": "{product.itemCondition}", // "http://schema.org/NewCondition"
+      "priceValidUntil": "{product.priceValidUntil}", // "2025-12-31"
+      "seller": {
+        "@type": "Organization",
+        "name": "{seller.name}", // "PetFoodStore"
+        "url": "{seller.url}" // "https://petfoodstore.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "{product.variant1.url}", // "https://example.com/nutrimax-small"
+      "availability": "{product.variant1.availability}", // "http://schema.org/InStock"
+      "price": "{product.variant1.price}", // "25.99"
+      "priceCurrency": "{product.priceCurrency}", // "USD"
+      "itemCondition": "{product.itemCondition}", // "http://schema.org/NewCondition"
+      "priceValidUntil": "{product.priceValidUntil}", // "2025-12-31"
+      "seller": {
+        "@type": "Organization",
+        "name": "{seller.name}", // "PetFoodStore"
+        "url": "{seller.url}" // "https://petfoodstore.com"
+      }
+    },
+
+    // End product price variants
+
+  ],
+  "weight": "{product.variantWeight}", // Dynamic based on variant, e.g., "5kg"
+  "category": "{product.category}", // "Pet Food > Dog Food > Dry Food"
+  "gtin": "{product.variantGtin}", // Dynamic based on variant, e.g., "12345678901234"
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Ingredients",
+      "value": "{product.variant1.ingredients}" // Dynamic based on variant, e.g., "Chicken, Rice, Carrots"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Nutritional Information",
+      "value": "{product.variant1.nutritionalInfo}" // Dynamic, e.g., "Protein 30%, Fat 20%"
+    }
+    // Repeat for each variant as needed
+  ],
+  "releaseDate": "{product.releaseDate}", // "2023-04-01"
+  "productionDate": "{product.productionDate}", // "2023-03-01"
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "{product.audience}" // "Dog Owners"
+  },
+  "award": "{product.award}", // "Best Dry Dog Food 2023"
+  "isAccessoryOrSparePartFor": "{product.isAccessoryOrSparePartFor}" // N/A for standalone products
+}

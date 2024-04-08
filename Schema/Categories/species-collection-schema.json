@@ -1,0 +1,87 @@
+{
+    "@context": "http://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "{category.name}", // "Dog Care Essentials"
+        "description": "{category.description}", // "Everything you need to know about caring for your dog."
+        "url": "{category.url}", // "https://www.example.com/dog-care"
+        "image": "{category.image}" // "https://www.example.com/images/dog-care-banner.jpg"
+      },
+      {
+        "@type": "ItemList",
+        "name": "Top Articles on Dog Care",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Article",
+              "name": "{article1.name}", // "5 Tips for a Healthy Dog Diet"
+              "url": "{article1.url}" // "https://www.example.com/articles/healthy-dog-diet"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Article",
+              "name": "{article2.name}", // "Best Dog Exercise Routines"
+              "url": "{article2.url}" // "https://www.example.com/articles/dog-exercise-routines"
+            }
+          }
+          // Add more articles as needed
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Featured Dog Care Products",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Product",
+              "name": "{product1.name}", // "Premium Dog Food"
+              "url": "{product1.url}" // "https://www.example.com/products/premium-dog-food"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Product",
+              "name": "{product2.name}", // "Ergonomic Dog Leash"
+              "url": "{product2.url}" // "https://www.example.com/products/ergonomic-dog-leash"
+            }
+          }
+          // Add more products as needed
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "name": "Dog Care FAQs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "{faq1.question}", // "What diet is best for my dog?"
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "{faq1.answer}" // "The best diet for your dog depends on its age, breed, and health condition..."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "{faq2.question}", // "How often should I exercise my dog?"
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "{faq2.answer}" // "Daily exercise is recommended for most dogs..."
+            }
+          }
+          // Add more FAQs as needed
+        ]
+      }
+      // Additional schema types can be added here as needed.
+    ]
+  }
+  

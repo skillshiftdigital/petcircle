@@ -1,0 +1,26 @@
+{
+    "@context": "http://schema.org",
+    "@type": "VideoObject",
+    "name": "{video.name}",
+    "description": "{video.description}",
+    "thumbnailUrl": "{video.thumbnailUrl}",
+    "uploadDate": "{video.uploadDate}",
+    "duration": "{video.duration}",
+    "contentUrl": "{video.contentUrl}",
+    "embedUrl": "{video.embedUrl}",
+    "publisher": {
+        "@type": "Organization",
+        "name": "{publisher.name}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{publisher.logoUrl}"
+        }
+    },
+    "interactionStatistic": {
+        "@type": "InteractionCounter",
+        "interactionType": {
+            "@type": "http://schema.org/WatchAction"
+        },
+        "userInteractionCount": "{video.viewCount}"
+    }
+}

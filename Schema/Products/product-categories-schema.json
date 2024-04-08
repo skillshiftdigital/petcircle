@@ -1,0 +1,58 @@
+//Health And Wellness
+      "additionalProperty": [
+        {
+          "name": "Active Ingredients",
+          "value": "{activeIngredients}" // "Glucosamine, Chondroitin"
+        },
+        {
+          "name": "Health Benefits",
+          "value": "{healthBenefits}" // "Supports joint health and mobility"
+        },
+        {
+          "name": "Safety Warnings",
+          "value": "{safetyWarnings}" // "Consult your vet if your dog is pregnant or lactating"
+        }
+    ],
+
+//GroomingTools
+      "material": "{material}", // "Stainless Steel"
+      "suitablePet": "{suitablePet}", // "Suitable for dogs with thick coats"
+      "primaryBenefits": "{primaryBenefits}" // "Detangles fur and removes undercoat"
+
+//TechAndAccessories      
+      "techFeatures": "{techFeatures}", // "GPS tracking, Activity monitoring"
+      "compatibility": "{compatibility}", // "Compatible with iOS and Android devices"
+      "subscriptionRequired": "{subscriptionRequired}" // "Yes, monthly subscription required"
+
+
+//ToysAndEntertainment
+      "playType": "{playType}", // "Chew, Fetch"
+      "durability": "{durability}", // "High durability for strong chewers"
+      "safety": "{safety}" // "Non-toxic rubber material"
+
+
+//TrainingAndBehavior
+      "trainingPhase": "{trainingPhase}", // "Puppy, Adult"
+      "endorsements": "{endorsements}", // "Endorsed by professional dog trainers"
+      "useInstructions": "{useInstructions}" // "Use for 10 minutes daily for best results"
+
+//FoodStorageAndAccessories
+      "capacity": "{capacity}", // "20kg"
+      "features": "{features}", // "Airtight seal, BPA-free plastic"
+      "cleaningInstructions": "{cleaningInstructions}" // "Dishwasher safe"
+
+//BedsAndComfort
+      "dimensions": "{dimensions}", // "90cm x 60cm x 10cm"
+      "recommendedPetSize": "{recommendedPetSize}", // "Up to 25kg"
+      "washability": "{washability}", // "Machine washable cover"
+      "orthopedicSupport": "{orthopedicSupport}" // "Yes"
+
+//CollarsLeadsAndApparel
+      "sizeGuide": "{sizeGuide}", // "S, M, L, XL based on neck circumference"
+      "adjustability": "{adjustability}", // "Adjustable up to 5cm"
+      "seasonalSuitability": "{seasonalSuitability}" // "Winter coat with thermal lining"
+
+//TravelAndSafety
+      "weightLimits": "{weightLimits}", // "Up to 15kg"
+      "safetyCertifications": "{safetyCertifications}", // "Crash-tested and certified"
+      "vehicleCompatibility": "{vehicleCompatibility}" // "Compatible with all standard seat belts"

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What is the best diet for a puppy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best diet for a puppy is ..."
+      }
+    }]
+  }
+  

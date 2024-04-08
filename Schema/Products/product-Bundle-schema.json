@@ -1,0 +1,79 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "{bundleName}",
+  "image": [
+    "{bundleImage1}",
+    "{bundleImage2}",
+    "{bundleImage3}"
+  ],
+  "description": "{bundleDescription}",
+  "sku": "{bundleSKU}",
+  "brand": {
+    "@type": "Brand",
+    "name": "{brandName}",
+    "logo": "{brandLogoUrl}"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "url": "{bundleUrl}",
+    "price": "{bundlePrice}",
+    "priceCurrency": "{currency}",
+    "lowPrice": "{bundleLowPrice}",
+    "highPrice": "{bundleHighPrice}",
+    "offerCount": "{bundleOfferCount}",
+    "availability": "{bundleAvailability}",
+    "seller": {
+      "@type": "Organization",
+      "name": "{sellerName}",
+      "url": "{sellerUrl}"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{bundleRatingValue}",
+    "reviewCount": "{bundleReviewCount}"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": "{reviewAuthor}",
+      "datePublished": "{reviewDate}",
+      "description": "{reviewDescription}",
+      "name": "{reviewTitle}",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "ratingValue": "{reviewRatingValue}",
+        "worstRating": "1"
+      }
+    }
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "Product",
+      "name": "{relatedProductName1}",
+      "description": "{relatedProductDescription1}",
+      "sku": "{relatedProductSKU1}",
+      "offers": {
+        "@type": "Offer",
+        "price": "{relatedProductPrice1}",
+        "priceCurrency": "{currency}",
+        "availability": "{relatedProductAvailability1}"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "{relatedProductName2}",
+      "description": "{relatedProductDescription2}",
+      "sku": "{relatedProductSKU2}",
+      "offers": {
+        "@type": "Offer",
+        "price": "{relatedProductPrice2}",
+        "priceCurrency": "{currency}",
+        "availability": "{relatedProductAvailability2}"
+      }
+    }
+    // Add more related products as needed
+  ]
+}

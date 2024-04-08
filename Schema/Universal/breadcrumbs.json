@@ -1,0 +1,40 @@
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "{homePageUrl}", // "https://www.petcircle.com.au"
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "{categoryPageUrl}", // "https://www.petcircle.com.au/pets"
+          "name": "{categoryName}" // "Pets"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "{subcategoryPageUrl}", // "https://www.petcircle.com.au/pets/dogs"
+          "name": "{subcategoryName}" // "Dogs"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@id": "{productPageUrl}", // "https://www.petcircle.com.au/pets/dogs/dog-beds"
+          "name": "{productName}" // "Dog Beds"
+        }
+      }
+      // Add more ListItems if there are further levels in the breadcrumb path.
+    ]
+  }
+  

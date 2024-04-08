@@ -1,0 +1,37 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "ItemList", // Denotes a list of categorized items under a specific brand.
+    "name": "{plpBrandCategoryName}", // "blackhawk Outdoor Dog Toys"
+    "description": "{plpBrandCategoryDescription}", // "Explore durable outdoor toys for dogs by blackhawk."
+    "url": "{plpBrandCategoryUrl}", // "https://www.petcircle.com.au/brands/blackhawk/outdoor-dog-toys"
+    "numberOfItems": "{numberOfItems}", // "25" - Total number of items listed in this category for blackhawk.
+    "itemListOrder": "http://schema.org/ItemListOrderAscending", // Indicates how the items are ordered.
+    "brand": {
+      "@type": "Brand",
+      "name": "{brandName}", // "blackhawk"
+      "logo": "{brandLogoUrl}" // "https://www.petcircle.com.au/logos/blackhawk-logo.png"
+    },
+    "category": "{categoryName}", // "Outdoor Dog Toys" - Specific category of products.
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "{product1Name}", // "blackhawk Flying Disc"
+          "url": "{product1Url}" // "https://www.petcircle.com.au/products/blackhawk-flying-disc"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "{product2Name}", // "blackhawk Tug Rope"
+          "url": "{product2Url}" // "https://www.petcircle.com.au/products/blackhawk-tug-rope"
+        }
+      }
+      // Additional ListItem objects for other products within the category.
+    ]
+  }
+  

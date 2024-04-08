@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org",
+    "@type": "ImageObject",
+    "name": "{image.name}",
+    "description": "{image.description}",
+    "url": "{image.url}",
+    "contentUrl": "{image.contentUrl}",
+    "thumbnail": {
+        "@type": "ImageObject",
+        "contentUrl": "{image.thumbnailUrl}"
+    },
+    "uploadDate": "{image.uploadDate}",
+    "width": "{image.width}",
+    "height": "{image.height}"
+}

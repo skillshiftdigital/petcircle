@@ -1,0 +1,40 @@
+{
+    "@context": "http://schema.org",
+    "@type": "AnimalShelter",
+    "name": "{shelter.name}",
+    "description": "{shelter.description}",
+    "image": "{shelter.image}",
+    "url": "{shelter.url}",
+    "telephone": "{shelter.telephone}",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{shelter.address.streetAddress}",
+        "addressLocality": "{shelter.address.addressLocality}",
+        "addressRegion": "{shelter.address.addressRegion}",
+        "postalCode": "{shelter.address.postalCode}",
+        "addressCountry": "{shelter.address.addressCountry}"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "{shelter.geo.latitude}",
+        "longitude": "{shelter.geo.longitude}"
+    },
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                // ... rest of the days ...
+            ],
+            "opens": "{shelter.openingHours.opens}",
+            "closes": "{shelter.openingHours.closes}"
+        }
+        // Add more OpeningHoursSpecification objects for different opening hours
+    ],
+    "sameAs": [
+        "{shelter.facebookPage}",
+        "{shelter.twitterHandle}",
+        // ... other social media profiles ...
+    ]
+}

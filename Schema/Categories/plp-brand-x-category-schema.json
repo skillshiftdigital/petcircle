@@ -1,0 +1,36 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "ItemList",
+    "name": "{plpBrandCategoryName}", // Example: "blackhawk - Dog Beds"
+    "description": "{plpBrandCategoryDescription}", // "Comfortable and durable dog beds by blackhawk."
+    "url": "{plpBrandCategoryUrl}", // "https://www.petcircle.com.au/brands/blackhawk/dog-beds"
+    "numberOfItems": "{numberOfItems}", // "40"
+    "itemListOrder": "ItemListOrderAscending",
+    "brand": {
+      "@type": "Thing",
+      "name": "{brandName}" // "blackhawk"
+    },
+    "category": "{categoryName}", // "Dog Beds"
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "{product1Name}", // "blackhawk Luxury Dog Bed - Small"
+          "url": "{product1Url}" // "https://www.petcircle.com.au/products/blackhawk-luxury-dog-bed-small"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "{product2Name}", // "blackhawk Orthopedic Dog Bed - Medium"
+          "url": "{product2Url}" // "https://www.petcircle.com.au/products/blackhawk-orthopedic-dog-bed-medium"
+        }
+      }
+      // Additional list items for other products go here.
+    ]
+  }
+  
